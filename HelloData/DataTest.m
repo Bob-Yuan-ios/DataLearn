@@ -23,7 +23,7 @@
         }
         [LinkUtil printFromHeadWithNode:curHead printPrefixText:[NSString stringWithFormat:@"正向遍历(%d):", i]];
         
-        if(i%2 == 0){
+        if(i%5 == 0){
             BOOL refreshLink = [LinkUtil refreshLinkWithData:i fromHeadWithNode:curHead];
             if (!refreshLink) {
                 curHead = [LinkUtil insertNode:[LinkData constructNodeWithData:i] fromHeadWithNode:curHead];

@@ -44,12 +44,12 @@
 
 + (LinkData *)insertNode:(LinkData *)newNode fromHeadWithNode:(LinkData *)headNode {
     
-    if (newNode.data == 1) {
+    if (!headNode.next) {
         headNode.pre = newNode;
-        headNode.next = newNode;
-        
+ 
         newNode.pre = headNode;
-        
+        newNode.next = headNode;
+
         return newNode;
     }
     
