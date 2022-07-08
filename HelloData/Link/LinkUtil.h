@@ -35,6 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param headNode 头节点
 + (BOOL)refreshLinkWithData:(NSInteger)data  fromHeadWithNode:(LinkData *)headNode;
 
+
+/// 链表反转
++ (void)reverseNode;
+
 @end
 
 NS_ASSUME_NONNULL_END

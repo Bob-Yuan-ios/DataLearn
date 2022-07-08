@@ -27,7 +27,10 @@
 
 + (NSArray<NSNumber *> *)printFromHeadWithNode:(LinkData *)headNode printPrefixText:(NSString *)text{
     
-    if (!headNode) return nil;
+    if (!headNode) {
+        NSLog(@"%@: 空数据", text);
+        return nil;
+    }
 
     LinkData *pNode = headNode;
     NSMutableArray *items = [NSMutableArray array];
@@ -99,5 +102,9 @@
     }
     
     return findElement;
+}
+
++ (void)reverseNode{
+    
 }
 @end
