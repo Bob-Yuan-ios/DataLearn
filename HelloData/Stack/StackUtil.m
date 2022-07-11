@@ -25,7 +25,6 @@
     
     if (!data || ![data isKindOfClass:[LinkData class]]) return NO;
     
-    
     LinkData *guardNode = headNode.next ? headNode.next : headNode;
 
     while (guardNode.next) {
@@ -51,15 +50,13 @@
         return preData;
     }
     NSLog(@"出栈节点：%ld", (long)preData.data);
-
    
     if (preData.pre == headNode) {
         headNode.pre = nil;
         headNode.next = nil;
         return preData;
     }
-    
-    
+        
     headNode.pre = preData.pre;
     preData.pre.next = nil;
     
