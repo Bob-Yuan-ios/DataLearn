@@ -10,13 +10,22 @@
 #import "LinkData.h"
 #import "StackUtil.h"
 #import "QueueUtil.h"
+#import "RecursionUtil.h"
 
 @implementation DataTest
 
 + (void)testCase{
-    [DataTest testQueueData];
+    [DataTest testRecursion];
 }
 
+
++ (void)testRecursion{
+    NSMutableDictionary *dic = [@{} mutableCopy];
+    for (int i = 1; i < 10; i++) {
+        NSInteger result = [RecursionUtil howMethod:i containValue:dic];
+        NSLog(@"recusion(%d) value is:%ld", i, (long)result);
+    }
+}
 
 /// 测试链表
 + (void)testLinkData{
