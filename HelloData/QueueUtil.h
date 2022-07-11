@@ -22,11 +22,15 @@ NS_ASSUME_NONNULL_BEGIN
            tail:(int *)tail
            item:(NSString *)item;
 
-/// 出队操作
+
+/// 出队列操作
+/// @param queue 队列
 /// @param head 头游标
 /// @param tail 尾游标
-+ (BOOL)deQueueHead:(int *)head
-               tail:(int *)tail;
++ (BOOL)deQueue:(NSMutableArray *)queue
+           head:(int *)head
+           tail:(int *)tail;
+          
 @end
 
 NS_ASSUME_NONNULL_END

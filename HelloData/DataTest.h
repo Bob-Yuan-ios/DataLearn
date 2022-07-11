@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DataTest : NSObject
 
 
-+ (void)testLinkData;
++ (void)testCase;
 
 @end
 
