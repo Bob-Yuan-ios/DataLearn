@@ -44,6 +44,8 @@
         [LinkUtil printFromHeadWithNode:headNode printPrefixText:@"遍历当前栈（出栈）"];
         guardNode = [StackUtil popLinkDataWithHeadNode:headNode];
     }
+    
+    NSLog(@"guardNode information is:%@", guardNode);
 }
 
 

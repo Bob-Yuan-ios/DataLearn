@@ -63,11 +63,11 @@
     LinkData *preData = headNode.pre;
 
     if (!preData) {
-        NSLog(@"出栈元素：%ld", (long)headNode.data);
+        NSLog(@"出栈头节点#####：%ld", (long)headNode.data);
         headNode = nil;
         return preData;
     }
-    NSLog(@"出栈元素：%ld", (long)preData.data);
+    NSLog(@"出栈节点：%ld", (long)preData.data);
 
    
     if (preData.pre == headNode) {
