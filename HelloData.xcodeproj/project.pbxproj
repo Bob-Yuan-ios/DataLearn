@@ -16,6 +16,7 @@
 		C4354AF22877D01600A1E93A /* DataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF12877D01600A1E93A /* DataTest.m */; };
 		C4354AF52877D0F700A1E93A /* LinkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF42877D0F700A1E93A /* LinkUtil.m */; };
 		C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF828781CBF00A1E93A /* StackUtil.m */; };
+		C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1E99287BC86700B7B4AF /* QueueUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		C4354AF42877D0F700A1E93A /* LinkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkUtil.m; sourceTree = "<group>"; };
 		C4354AF728781CBF00A1E93A /* StackUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackUtil.h; sourceTree = "<group>"; };
 		C4354AF828781CBF00A1E93A /* StackUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackUtil.m; sourceTree = "<group>"; };
+		C49D1E98287BC86700B7B4AF /* QueueUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueUtil.h; sourceTree = "<group>"; };
+		C49D1E99287BC86700B7B4AF /* QueueUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 		C4354AD52877CF3800A1E93A /* HelloData */ = {
 			isa = PBXGroup;
 			children = (
+				C49D1E97287BC85400B7B4AF /* Queue */,
 				C4354AF628781CB100A1E93A /* Stack */,
 				C4354AE92877CF4400A1E93A /* Link */,
 				C4354AD62877CF3800A1E93A /* AppDelegate.h */,
@@ -102,6 +106,15 @@
 				C4354AF828781CBF00A1E93A /* StackUtil.m */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		C49D1E97287BC85400B7B4AF /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				C49D1E98287BC86700B7B4AF /* QueueUtil.h */,
+				C49D1E99287BC86700B7B4AF /* QueueUtil.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */,
+				C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */,
 				C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */,
 				C4354AF22877D01600A1E93A /* DataTest.m in Sources */,
 				C4354AEC2877CF5900A1E93A /* LinkData.m in Sources */,

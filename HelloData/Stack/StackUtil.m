@@ -17,24 +17,7 @@
 @end
 
 @implementation StackUtil
-
-- (BOOL)pushElement:(NSString *)element{
-    if (!element || ![element isKindOfClass:[NSString class]]) return NO;
-    if (0 == _totalElement - _count) return NO;
-    
-    [_items addObject:element];
-    _count++;
-    
-    return YES;
-}
-
-- (NSString *)popElement{
-    if (0 == _count) return @"";
-    
-    NSString *element = [_items lastObject];
-    [_items removeObject:element];
-    return element;
-}
+ 
 
 + (BOOL)pushLinkData:(LinkData *)data withHeadNode:(LinkData *)headNode{
     
