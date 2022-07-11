@@ -79,8 +79,8 @@
     NSLog(@"入队列操作完成：%@", arr);
     
     for(int i = 0; i < 2 + cnt; i++){
-        [QueueUtil deQueue:arr head:(&head) tail:(&tail)];
-        NSLog(@"出队列操作分步执行：%@====%@", @(head), @(tail));
+        NSString *item = [QueueUtil deQueue:arr head:(&head) tail:(&tail)];
+        NSLog(@"出队列操作分步执行：%@~~~~%@====%@", item, @(head), @(tail));
         if (0 == (head - tail)) {
             NSLog(@"队列清空后数据：%@", arr);
             break;

@@ -41,18 +41,19 @@
     return YES;
 }
 
-+ (BOOL)deQueue:(NSMutableArray *)queue head:(int *)head tail:(int *)tail{
++ (NSString *)deQueue:(NSMutableArray *)queue head:(int *)head tail:(int *)tail{
     
     int headValue = *head;
     int tailValue = *tail;
     
-    if (0 == headValue - tailValue) return NO;
+    if (0 == headValue - tailValue) return @"";
     
+    NSMutableString *item = [queue[headValue] mutableCopy];
     queue[headValue] = [@(-1) stringValue];
     
     headValue++;
     *head = headValue;
     
-    return YES;
+    return item;
 }
 @end

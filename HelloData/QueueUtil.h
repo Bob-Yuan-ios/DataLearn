@@ -27,9 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param queue 队列
 /// @param head 头游标
 /// @param tail 尾游标
-+ (BOOL)deQueue:(NSMutableArray *)queue
-           head:(int *)head
-           tail:(int *)tail;
++ (NSString *)deQueue:(NSMutableArray *)queue
+                 head:(int *)head
+                 tail:(int *)tail;
+           
           
 @end
 
