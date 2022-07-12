@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4124AEC287D76DB00B6002A /* SortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4124AEB287D76DB00B6002A /* SortUtil.m */; };
 		C4354AD82877CF3800A1E93A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AD72877CF3800A1E93A /* AppDelegate.m */; };
 		C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354ADA2877CF3800A1E93A /* ViewController.m */; };
 		C4354ADD2877CF3A00A1E93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4354ADC2877CF3A00A1E93A /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4124AEA287D76DB00B6002A /* SortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortUtil.h; sourceTree = "<group>"; };
+		C4124AEB287D76DB00B6002A /* SortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortUtil.m; sourceTree = "<group>"; };
 		C4354AD32877CF3800A1E93A /* HelloData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4354AD62877CF3800A1E93A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4354AD72877CF3800A1E93A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4124AE9287D76C500B6002A /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				C4124AEA287D76DB00B6002A /* SortUtil.h */,
+				C4124AEB287D76DB00B6002A /* SortUtil.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		C4354ACA2877CF3800A1E93A = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +86,7 @@
 		C4354AD52877CF3800A1E93A /* HelloData */ = {
 			isa = PBXGroup;
 			children = (
+				C4124AE9287D76C500B6002A /* Sort */,
 				C49D1E9E287C276800B7B4AF /* Recursion */,
 				C49D1E97287BC85400B7B4AF /* Queue */,
 				C4354AF628781CB100A1E93A /* Stack */,
@@ -202,6 +215,7 @@
 				C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */,
 				C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */,
 				C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */,
+				C4124AEC287D76DB00B6002A /* SortUtil.m in Sources */,
 				C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */,
 				C4354AF22877D01600A1E93A /* DataTest.m in Sources */,
 				C4354AEC2877CF5900A1E93A /* LinkData.m in Sources */,

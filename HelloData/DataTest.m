@@ -11,13 +11,22 @@
 #import "StackUtil.h"
 #import "QueueUtil.h"
 #import "RecursionUtil.h"
+#import "SortUtil.h"
 
 @implementation DataTest
 
 + (void)testCase{
-    [DataTest testRecursion];
+    [DataTest testSort];
 }
 
++ (void)testSort{
+//    NSMutableArray *arr = [@[@(1), @(-1), @(9), @(8), @(6), @(17)] mutableCopy];
+//    [SortUtil bubbleSort:arr cnt:arr.count];
+    
+    NSMutableArray *arr = [@[@(9), @(8), @(7), @(6), @(5), @(4)] mutableCopy];
+    [SortUtil insertSort:arr cnt:arr.count];
+    NSLog(@"after insertSort is:%@", arr);
+}
 
 + (void)testRecursion{
     NSMutableDictionary *dic = [@{} mutableCopy];
