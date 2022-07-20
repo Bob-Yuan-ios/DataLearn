@@ -20,6 +20,7 @@
 		C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1E99287BC86700B7B4AF /* QueueUtil.m */; };
 		C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */; };
 		C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */; };
+		C4B51BEE288809BE00F5FD60 /* TreeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4B51BEC288809BE00F5FD60 /* TreeUtil.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,8 @@
 		C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursionUtil.m; sourceTree = "<group>"; };
 		C4B51BE92887E5DD00F5FD60 /* QuickSortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortUtil.h; sourceTree = "<group>"; };
 		C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortUtil.m; sourceTree = "<group>"; };
+		C4B51BEC288809BE00F5FD60 /* TreeUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TreeUtil.cpp; sourceTree = "<group>"; };
+		C4B51BED288809BE00F5FD60 /* TreeUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TreeUtil.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				C4124AEB287D76DB00B6002A /* NormalSortUtil.m */,
 				C4B51BE92887E5DD00F5FD60 /* QuickSortUtil.h */,
 				C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */,
+				C4B51BEC288809BE00F5FD60 /* TreeUtil.cpp */,
+				C4B51BED288809BE00F5FD60 /* TreeUtil.hpp */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				C4354AE22877CF3A00A1E93A /* main.m in Sources */,
 				C4354AD82877CF3800A1E93A /* AppDelegate.m in Sources */,
 				C4354AF52877D0F700A1E93A /* LinkUtil.m in Sources */,
+				C4B51BEE288809BE00F5FD60 /* TreeUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
