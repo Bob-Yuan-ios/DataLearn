@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4124AEC287D76DB00B6002A /* SortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4124AEB287D76DB00B6002A /* SortUtil.m */; };
+		C4124AEC287D76DB00B6002A /* NormalSortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4124AEB287D76DB00B6002A /* NormalSortUtil.m */; };
 		C4354AD82877CF3800A1E93A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AD72877CF3800A1E93A /* AppDelegate.m */; };
 		C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354ADA2877CF3800A1E93A /* ViewController.m */; };
 		C4354ADD2877CF3A00A1E93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4354ADC2877CF3A00A1E93A /* Assets.xcassets */; };
@@ -19,11 +19,12 @@
 		C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF828781CBF00A1E93A /* StackUtil.m */; };
 		C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1E99287BC86700B7B4AF /* QueueUtil.m */; };
 		C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */; };
+		C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C4124AEA287D76DB00B6002A /* SortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortUtil.h; sourceTree = "<group>"; };
-		C4124AEB287D76DB00B6002A /* SortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortUtil.m; sourceTree = "<group>"; };
+		C4124AEA287D76DB00B6002A /* NormalSortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSortUtil.h; sourceTree = "<group>"; };
+		C4124AEB287D76DB00B6002A /* NormalSortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSortUtil.m; sourceTree = "<group>"; };
 		C4354AD32877CF3800A1E93A /* HelloData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4354AD62877CF3800A1E93A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4354AD72877CF3800A1E93A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +46,8 @@
 		C49D1E99287BC86700B7B4AF /* QueueUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueUtil.m; sourceTree = "<group>"; };
 		C49D1E9F287C286C00B7B4AF /* RecursionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursionUtil.h; sourceTree = "<group>"; };
 		C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursionUtil.m; sourceTree = "<group>"; };
+		C4B51BE92887E5DD00F5FD60 /* QuickSortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortUtil.h; sourceTree = "<group>"; };
+		C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 		C4124AE9287D76C500B6002A /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				C4124AEA287D76DB00B6002A /* SortUtil.h */,
-				C4124AEB287D76DB00B6002A /* SortUtil.m */,
+				C4124AEA287D76DB00B6002A /* NormalSortUtil.h */,
+				C4124AEB287D76DB00B6002A /* NormalSortUtil.m */,
+				C4B51BE92887E5DD00F5FD60 /* QuickSortUtil.h */,
+				C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -215,7 +220,8 @@
 				C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */,
 				C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */,
 				C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */,
-				C4124AEC287D76DB00B6002A /* SortUtil.m in Sources */,
+				C4124AEC287D76DB00B6002A /* NormalSortUtil.m in Sources */,
+				C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */,
 				C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */,
 				C4354AF22877D01600A1E93A /* DataTest.m in Sources */,
 				C4354AEC2877CF5900A1E93A /* LinkData.m in Sources */,

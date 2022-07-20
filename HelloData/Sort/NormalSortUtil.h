@@ -1,5 +1,5 @@
 //
-//  SortUtil.h
+//  NormalSortUtil.h
 //  HelloData
 //
 //  Created by Bob on 2022/7/12.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SortUtil : NSObject
+@interface NormalSortUtil : NSObject
 
 /// 冒泡排序 ： 升序排序
 /// @param arr 需要排序的数组

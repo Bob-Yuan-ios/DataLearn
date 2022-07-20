@@ -1,13 +1,13 @@
 //
-//  SortUtil.m
+//  NormalSortUtil.m
 //  HelloData
 //
 //  Created by Bob on 2022/7/12.
 //
 
-#import "SortUtil.h"
+#import "NormalSortUtil.h"
 
-@implementation SortUtil
+@implementation NormalSortUtil
 
 + (void)bubbleSort:(NSMutableArray *)arr cnt:(NSInteger)n{
     
@@ -53,4 +53,5 @@
         arr[j + 1] = value;
     }
 }
+
 @end

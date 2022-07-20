@@ -11,7 +11,9 @@
 #import "StackUtil.h"
 #import "QueueUtil.h"
 #import "RecursionUtil.h"
-#import "SortUtil.h"
+
+#import "NormalSortUtil.h"
+#import "QuickSortUtil.h"
 
 @implementation DataTest
 
@@ -23,9 +25,17 @@
 //    NSMutableArray *arr = [@[@(1), @(-1), @(9), @(8), @(6), @(17)] mutableCopy];
 //    [SortUtil bubbleSort:arr cnt:arr.count];
     
-    NSMutableArray *arr = [@[@(9), @(8), @(7), @(6), @(5), @(4)] mutableCopy];
-    [SortUtil insertSort:arr cnt:arr.count];
-    NSLog(@"after insertSort is:%@", arr);
+//    NSMutableArray *arr = [@[@(9), @(8), @(7), @(6), @(5), @(4)] mutableCopy];
+//    [NormalSortUtil insertSort:arr cnt:arr.count];
+//    NSLog(@"after insertSort is:%@", arr);
+    
+    NSMutableArray *arr1 = [NSMutableArray array];
+    for (int i = 50; i >= 0; i--) {
+        [arr1 addObject:@(i--)];
+    }
+    NSLog(@"before quickSort is:%@", arr1);
+    [QuickSortUtil mergeSort:arr1];
+    NSLog(@"after quickSort is:%@", arr1);
 }
 
 + (void)testRecursion{
