@@ -15,10 +15,50 @@
 #import "NormalSortUtil.h"
 #import "QuickSortUtil.h"
 
+#import "BinaryTree.h"
+
 @implementation DataTest
 
 + (void)testCase{
-    [DataTest testSort];
+    [DataTest testTree];
+}
+
+
++ (void)testTree{
+//    BinaryTree *binaryTree = [BinaryTree new];
+//
+//    TreeNode *root = [[TreeNode alloc] initWithValue:1];
+//    [binaryTree setRoot:root];
+//
+//    TreeNode *rootLeft = [[TreeNode alloc] initWithValue:2];
+//    TreeNode *rootRight = [[TreeNode alloc] initWithValue:3];
+//    [root setLeftNode:rootLeft];
+//    [root setRigthNode:rootRight];
+//
+//
+//    [rootLeft setLeftNode:[[TreeNode alloc] initWithValue:4]];
+//    [rootLeft setRigthNode:[[TreeNode alloc] initWithValue:5]];
+//
+//    [rootRight setLeftNode:[[TreeNode alloc] initWithValue:6]];
+//    [rootRight setRigthNode:[[TreeNode alloc] initWithValue:7]];
+//
+//    [binaryTree frontShow];
+//    [binaryTree middleShow];
+//    [binaryTree afterShow];
+//
+//    TreeNode *result = [binaryTree frontSearch:5];
+//    NSLog(@"front search information is:%@", result);
+//
+//    [binaryTree deleteTreeNode:3];
+//    [binaryTree frontShow];
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithCapacity:7];
+    for (int i = 1; i < 8; i++) {
+        [arr addObject:@(i)];
+    }
+    
+    BinaryTree *tree = [[BinaryTree alloc] initWithArrayBinaryTree:arr];
+    [tree arrayBinaryTreeFrontShow];
 }
 
 + (void)testSort{
