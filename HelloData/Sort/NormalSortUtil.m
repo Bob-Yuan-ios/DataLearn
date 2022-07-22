@@ -9,6 +9,9 @@
 
 @implementation NormalSortUtil
 
+/// 冒泡排序 ： 升序排序
+/// @param arr 需要排序的数组
+/// @param n  数组元素个数
 + (void)bubbleSort:(NSMutableArray *)arr cnt:(NSInteger)n{
     
     if(n <= 1) return;
@@ -33,7 +36,9 @@
     }
 }
 
-
+/// 插入排序 ： 升序排序
+/// @param arr 需要排序的数组
+/// @param n 数组元素个数
 + (void)insertSort:(NSMutableArray *)arr cnt:(NSInteger)n{
     
     if (n <= 1) return;

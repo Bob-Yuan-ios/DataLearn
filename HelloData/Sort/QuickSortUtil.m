@@ -9,11 +9,20 @@
 
 @implementation QuickSortUtil
 
+
+/// 归并排序
+/// @param arr 需要排序的数组
 + (void)mergeSort:(NSMutableArray *)arr{
     NSMutableArray *temp = [NSMutableArray arrayWithCapacity:arr.count];
     [QuickSortUtil sortAction:arr leftIndex:0 rightIndex:(arr.count - 1) tempArr:temp];
 }
 
+
+/// 归并排序
+/// @param arr 需要排序的数组
+/// @param left 左哨兵
+/// @param right 右哨兵
+/// @param temp 临时存放数据的数组
 + (void)sortAction:(NSMutableArray *)arr leftIndex:(NSInteger)left rightIndex:(NSInteger)right tempArr:(NSMutableArray *)temp{
     if (left < right) {
         NSInteger middle = (left + right)/2;
