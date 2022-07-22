@@ -13,10 +13,10 @@
 		C4354ADD2877CF3A00A1E93A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4354ADC2877CF3A00A1E93A /* Assets.xcassets */; };
 		C4354AE02877CF3A00A1E93A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4354ADE2877CF3A00A1E93A /* Main.storyboard */; };
 		C4354AE22877CF3A00A1E93A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AE12877CF3A00A1E93A /* main.m */; };
-		C4354AEC2877CF5900A1E93A /* LinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AEB2877CF5900A1E93A /* LinkData.m */; };
 		C4354AF22877D01600A1E93A /* DataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF12877D01600A1E93A /* DataTest.m */; };
 		C4354AF52877D0F700A1E93A /* LinkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF42877D0F700A1E93A /* LinkUtil.m */; };
 		C4354AF928781CBF00A1E93A /* StackUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4354AF828781CBF00A1E93A /* StackUtil.m */; };
+		C43C9C51288A97BA00A82DA6 /* LinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = C43C9C4F288A97BA00A82DA6 /* LinkData.m */; };
 		C43D0D0B28894127004C6576 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D0D0A28894127004C6576 /* BinaryTree.m */; };
 		C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1E99287BC86700B7B4AF /* QueueUtil.m */; };
 		C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */; };
@@ -35,14 +35,14 @@
 		C4354ADF2877CF3A00A1E93A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4354AE12877CF3A00A1E93A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4354AE32877CF3A00A1E93A /* HelloData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloData.entitlements; sourceTree = "<group>"; };
-		C4354AEA2877CF5900A1E93A /* LinkData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkData.h; sourceTree = "<group>"; };
-		C4354AEB2877CF5900A1E93A /* LinkData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkData.m; sourceTree = "<group>"; };
 		C4354AF02877D01600A1E93A /* DataTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTest.h; sourceTree = "<group>"; };
 		C4354AF12877D01600A1E93A /* DataTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataTest.m; sourceTree = "<group>"; };
 		C4354AF32877D0F700A1E93A /* LinkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkUtil.h; sourceTree = "<group>"; };
 		C4354AF42877D0F700A1E93A /* LinkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkUtil.m; sourceTree = "<group>"; };
 		C4354AF728781CBF00A1E93A /* StackUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackUtil.h; sourceTree = "<group>"; };
 		C4354AF828781CBF00A1E93A /* StackUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackUtil.m; sourceTree = "<group>"; };
+		C43C9C4F288A97BA00A82DA6 /* LinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkData.m; sourceTree = "<group>"; };
+		C43C9C50288A97BA00A82DA6 /* LinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkData.h; sourceTree = "<group>"; };
 		C43D0D0928894127004C6576 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		C43D0D0A28894127004C6576 /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 		C49D1E98287BC86700B7B4AF /* QueueUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueUtil.h; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 		C4354AE92877CF4400A1E93A /* Link */ = {
 			isa = PBXGroup;
 			children = (
-				C4354AEA2877CF5900A1E93A /* LinkData.h */,
-				C4354AEB2877CF5900A1E93A /* LinkData.m */,
+				C43C9C50288A97BA00A82DA6 /* LinkData.h */,
+				C43C9C4F288A97BA00A82DA6 /* LinkData.m */,
 				C4354AF32877D0F700A1E93A /* LinkUtil.h */,
 				C4354AF42877D0F700A1E93A /* LinkUtil.m */,
 			);
@@ -235,10 +235,10 @@
 				C4354ADB2877CF3800A1E93A /* ViewController.m in Sources */,
 				C4124AEC287D76DB00B6002A /* NormalSortUtil.m in Sources */,
 				C43D0D0B28894127004C6576 /* BinaryTree.m in Sources */,
+				C43C9C51288A97BA00A82DA6 /* LinkData.m in Sources */,
 				C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */,
 				C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */,
 				C4354AF22877D01600A1E93A /* DataTest.m in Sources */,
-				C4354AEC2877CF5900A1E93A /* LinkData.m in Sources */,
 				C4354AE22877CF3A00A1E93A /* main.m in Sources */,
 				C4354AD82877CF3800A1E93A /* AppDelegate.m in Sources */,
 				C4354AF52877D0F700A1E93A /* LinkUtil.m in Sources */,

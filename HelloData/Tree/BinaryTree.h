@@ -9,12 +9,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+/// 节点数据结构
 @interface TreeNode : NSObject
 
+/// 左子节点
 @property (nonatomic, strong) TreeNode *leftNode;
 
+/// 右子节点
 @property (nonatomic, strong) TreeNode *rigthNode;
 
+/// 初始化节点
+/// @param value   保存值
 - (instancetype)initWithValue:(NSInteger)value;
 
 - (void)frontShow;

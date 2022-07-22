@@ -96,6 +96,8 @@
     return self;
 }
 
+
+/// 前序遍历
 - (void)frontShow{
     NSLog(@"front value is:%ld", _value);
     
@@ -108,6 +110,7 @@
     }
 }
 
+/// 中序遍历
 -  (void)middleShow{
     
     if (_leftNode != Nil) {
@@ -121,6 +124,8 @@
     }
 }
 
+
+/// 后续遍历
 - (void)afterShow{
     
     if (_leftNode != Nil) {
@@ -133,7 +138,9 @@
     NSLog(@"after value is:%ld", _value);
 }
 
-//先序查找
+
+/// 前序查找
+/// @param targetValue 目标值
 - (TreeNode *)frontSearch:(NSInteger)targetValue{
     if (self.value == targetValue)  return self;
 
@@ -153,6 +160,9 @@
     return target;
 }
 
+
+/// 删除节点
+/// @param targetValue 需要删除节点的值
 - (void)deleteTreeNode:(NSInteger)targetValue{
 
     if (_leftNode != Nil && (0 == _leftNode.value - targetValue)) {
