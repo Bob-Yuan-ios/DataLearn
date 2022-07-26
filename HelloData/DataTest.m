@@ -16,11 +16,13 @@
 #import "QuickSortUtil.h"
 
 #import "BinaryTree.h"
+#import "DictionaryUtil.h"
 
 @implementation DataTest
 
 + (void)testCase{
-    [DataTest testTree];
+
+    [DictionaryUtil testCopyingDictionary];
 }
 
 

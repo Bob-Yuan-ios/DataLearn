@@ -20,6 +20,7 @@
 		C43D0D0B28894127004C6576 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = C43D0D0A28894127004C6576 /* BinaryTree.m */; };
 		C49D1E9A287BC86700B7B4AF /* QueueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1E99287BC86700B7B4AF /* QueueUtil.m */; };
 		C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */; };
+		C4A47230288FE10A001C4DF9 /* DictionaryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A4722F288FE10A001C4DF9 /* DictionaryUtil.m */; };
 		C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		C49D1E99287BC86700B7B4AF /* QueueUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueUtil.m; sourceTree = "<group>"; };
 		C49D1E9F287C286C00B7B4AF /* RecursionUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecursionUtil.h; sourceTree = "<group>"; };
 		C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecursionUtil.m; sourceTree = "<group>"; };
+		C4A4722E288FE10A001C4DF9 /* DictionaryUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryUtil.h; sourceTree = "<group>"; };
+		C4A4722F288FE10A001C4DF9 /* DictionaryUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryUtil.m; sourceTree = "<group>"; };
 		C4B51BE92887E5DD00F5FD60 /* QuickSortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSortUtil.h; sourceTree = "<group>"; };
 		C4B51BEA2887E5DD00F5FD60 /* QuickSortUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +97,7 @@
 		C4354AD52877CF3800A1E93A /* HelloData */ = {
 			isa = PBXGroup;
 			children = (
+				C4A4722D288FE0F3001C4DF9 /* Dictionary */,
 				C43D0D0828894102004C6576 /* Tree */,
 				C4124AE9287D76C500B6002A /* Sort */,
 				C49D1E9E287C276800B7B4AF /* Recursion */,
@@ -159,6 +163,15 @@
 				C49D1EA0287C286C00B7B4AF /* RecursionUtil.m */,
 			);
 			path = Recursion;
+			sourceTree = "<group>";
+		};
+		C4A4722D288FE0F3001C4DF9 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C4A4722E288FE10A001C4DF9 /* DictionaryUtil.h */,
+				C4A4722F288FE10A001C4DF9 /* DictionaryUtil.m */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +250,7 @@
 				C43D0D0B28894127004C6576 /* BinaryTree.m in Sources */,
 				C43C9C51288A97BA00A82DA6 /* LinkData.m in Sources */,
 				C4B51BEB2887E5DD00F5FD60 /* QuickSortUtil.m in Sources */,
+				C4A47230288FE10A001C4DF9 /* DictionaryUtil.m in Sources */,
 				C49D1EA1287C286C00B7B4AF /* RecursionUtil.m in Sources */,
 				C4354AF22877D01600A1E93A /* DataTest.m in Sources */,
 				C4354AE22877CF3A00A1E93A /* main.m in Sources */,
