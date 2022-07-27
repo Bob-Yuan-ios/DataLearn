@@ -9,7 +9,6 @@
 
 @implementation Student
 
- 
 @end
 
 @interface Person (){
@@ -53,7 +52,6 @@
 //    [muKey appendString:@"xxx"];
 //    NSLog(@"=====%@", muDic[muKey]);
     
-    
     /*
      (lldb) p muKey
     (__NSCFString *) $0 = 0x0000600003c85ec0 @"key1xxx"
@@ -69,7 +67,7 @@
     
     Person *p  = [Person new];
     [p setValue:@"nickName" forKey:@"name"];
-    NSLog(@"kvc name = :%@", [p valueForKey:@"name"]);
+    NSLog(@"kvc name = %@", [p valueForKey:@"name"]);
     
     Student *s = [Student new];
     s.room = @"1001";
