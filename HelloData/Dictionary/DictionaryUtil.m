@@ -7,10 +7,16 @@
 
 #import "DictionaryUtil.h"
 
+@implementation Student
+
+ 
+@end
+
 @interface Person (){
     NSString *_name;//遵守KVC命名规则
 }
 
+@property (nonatomic, strong) Student *student;
 @end
 
 @implementation Person
@@ -53,7 +59,7 @@
     (__NSCFString *) $0 = 0x0000600003c85ec0 @"key1xxx"
      (lldb) p [muDic allKeys][0]
      (NSTaggedPointerString *) $1 = 0xa7c69430f5661b5c @"key1"
-     
+     /Users/bob/Desktop/code/DataLearn/HelloData/Dictionary/DictionaryUtil.m
      (lldb) p muValue
      (__NSCFConstantString *) $0 = 0x0000000102a44268 @"value1"
      (lldb) p [muDic allValues][0]
@@ -63,6 +69,11 @@
     
     Person *p  = [Person new];
     [p setValue:@"nickName" forKey:@"name"];
-    NSLog(@"kvc 111:%@", [p valueForKey:@"name"]);
+    NSLog(@"kvc name = :%@", [p valueForKey:@"name"]);
+    
+    Student *s = [Student new];
+    s.room = @"1001";
+    [p setValue:s forKey:@"student"];
+    NSLog(@"keyPath student.room = %@", [p valueForKeyPath:@"student.room"]);
 }
 @end
